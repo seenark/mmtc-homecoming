@@ -8,6 +8,7 @@ module.exports = {
       },
       backgroundImage: {
         vessel2: "url(/vessel-gen2.jpeg)",
+        gd: "url(/Gd1.jpg)",
       },
     },
   },

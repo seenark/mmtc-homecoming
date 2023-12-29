@@ -40,4 +40,13 @@ body {
   padding: 0;
   line-height: inherit;
   font-family: "sriracha";
+  color: black;
+}
+input,
+select {
+  background-color: white;
+}
+
+tr {
+  @apply whitespace-nowrap;
 }

@@ -7,6 +7,7 @@
     "jsx": "react-jsx",
     "jsxImportSource": "@builder.io/qwik",
     "strict": true,
+    "exactOptionalPropertyTypes": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
@@ -19,7 +20,8 @@
     "types": ["node", "vite/client"],
     "paths": {
       "~/*": ["./src/*"],
-      "~/media/*": ["./src/media/*"]
+      "~/media/*": ["./src/media/*"],
+      "~/supabase/*": ["./src/supabase/*"]
     }
   },
   "files": ["./.eslintrc.cjs"],
