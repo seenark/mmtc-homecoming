@@ -83,19 +83,21 @@ export default component$(() => {
   });
 
   return (
-    <div class="mx-auto flex h-screen w-full max-w-[1280px] flex-col items-center gap-8 pt-16">
+    <div class="mx-auto flex h-[calc(100vh-100px)] w-full max-w-[1280px] flex-col items-center gap-8 pt-16">
       <h1 class="text-2xl">2567</h1>
       <div class="flex w-full items-center justify-between">
-        <h6>เรียงลำดับจากเลขรุ่นตามด้วยชื่อ</h6>
-        <button class="btn btn-sm" onClick$={downloadCsv}>
+        <h6>
+          ตารางนี้เรียงลำดับจาก <u>"เลขรุ่น"</u> ตามด้วย <u>"ชื่อ"</u>
+        </h6>
+        <button class="btn btn-sm bg-white text-black" onClick$={downloadCsv}>
           Download CSV
         </button>
       </div>
-      <div class="w-full overflow-x-auto">
+      <div class="w-full overflow-x-auto rounded-lg outline outline-2 outline-offset-4 outline-white/50">
         <table class="table table-pin-rows">
           {/* head */}
           <thead>
-            <tr>
+            <tr class="bg-slate-50 text-lg text-black">
               <th>system id</th>
               <th>รุ่น</th>
               <th>ชื่อ - นามสกุล</th>
