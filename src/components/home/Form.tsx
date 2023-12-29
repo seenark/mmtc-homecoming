@@ -9,11 +9,11 @@ import { supabase } from "~/supabase/index";
 
 export default component$(() => {
   const modalRef = useSignal<Element>();
-  const name = useSignal("Aum");
-  const nickName = useSignal("Aum");
-  const classNumber = useSignal("1");
-  const tel = useSignal("1234567890");
-  const email = useSignal("a@a.com");
+  const name = useSignal("");
+  const nickName = useSignal("");
+  const classNumber = useSignal("");
+  const tel = useSignal("");
+  const email = useSignal("");
   const company = useSignal("");
   const position = useSignal("");
 
